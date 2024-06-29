@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1 class="game-heading">Tic Tac Toe</h1>
-        <div class="game-board">
+        <div class="game-board" id="board">
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
@@ -21,7 +21,12 @@
             <div class="cell" data-cell></div>
             <div class="cell" data-cell></div>
         </div>
+        <div class="winner-message" id="winnerMessage">
+            <div id="winnerText"></div>
+            <button id="restartButton" class="restart-button">Play Again</button>
+        </div>
         <footer class="footer">Made by Kalvian</footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -44,6 +44,46 @@ body {
     background-color: #ddd;
 }
 
+.cell.x::before, .cell.circle::before {
+    content: attr(data-mark);
+    color: #FAB201; /* Set the color of X and O */
+}
+
+.winner-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winnerText {
+    font-size: 48px;
+    color: #FAB201;
+    -webkit-text-stroke: 2px white;
+    margin-bottom: 20px;
+}
+
+.restart-button {
+    font-size: 24px;
+    color: white;
+    background-color: #FAB201;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.restart-button:hover {
+    background-color: #e6a101;
+}
+
 .footer {
     margin-top: 20px;
     font-size: 20px;
