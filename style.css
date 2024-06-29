@@ -1,0 +1,51 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center; /* Center align text and elements */
+}
+
+.container {
+    text-align: center;
+}
+
+.game-heading {
+    font-size: 120px; /* Increase the heading size */
+    color: #FAB201;
+    -webkit-text-stroke: 5px white;
+    margin-bottom: 20px; /* Add some space between the heading and the board */
+}
+
+.game-board {
+    display: inline-grid; /* Center the game board */
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
